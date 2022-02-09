@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<stack>
-using namespace std;
+using namespace std;//T>C= O(n) S.C = O(n)->left and right
 int Largest_rectangle(int a[],int n)
 {
     vector<int>left(n);

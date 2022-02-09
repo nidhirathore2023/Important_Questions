@@ -2,7 +2,7 @@
 using namespace std;
 typedef struct node1{ //typedef -> no need to use ----->  struct node1 *head --> instead can use --> node * head 
     int data;
-    struct node1 *next;
+    struct node1 *next;// *--> using pointer because we are trying to put container into ifself with some  extra data 
 }node;
 
 //insert values
