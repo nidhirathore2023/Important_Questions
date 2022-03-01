@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 // TC = O(n^2) , SC= O(n^2)
-// similar to coin change and subset sum ----> but different ---- >in terms of repetition
+// similar to Target Subset Sum ----> in terms of repetition ->2-D array
 int main()
 {
     int n;

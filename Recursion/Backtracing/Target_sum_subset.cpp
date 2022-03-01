@@ -3,7 +3,7 @@
 using namespace std;
 void target_sub_set(vector<int>a,int c,int cul_sum,int sum,string ans)
 {
-    if(a.size()==c)// couter became equal to array size 
+    if(a.size()==c)// counter became equal to array size 
     {
         if(sum==cul_sum)// sum is also equal
         {

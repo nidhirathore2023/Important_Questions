@@ -13,14 +13,15 @@ typedef struct node1{
       right=NULL;
     }
 }node;
-// Level- Order Traversal --- > remove -> print -> add children
+// Level- Order Traversal( line-wise ) --- > remove -> print -> add children
 void level_order(node *root)
 {
     if(root==NULL)
     {
         return ;
     }
-    queue<node*>q;
+    queue<node*>q;// parent queue
+    queue<node*>c;// child queue
     q.push(root);
     while(!q.empty())
     {
@@ -28,13 +29,24 @@ void level_order(node *root)
         q.pop();
         cout<<a->data<<" ";// print 
         // add
-        if(a->left!=NULL)// if left present -->push to queue
+        if(a->left!=NULL)// if left present -->push to child queue
         {
-            q.push(a->left);
+            c.push(a->left);
         }
-        if(a->right!=NULL)// if right present --> push to queue
+        if(a->right!=NULL)// if right present --> push to child queue
         {
-            q.push(a->right);
+            c.push(a->right);
+        }
+
+        if(q.empty())// parent queue is empty then get values from child queue and change line
+        {
+            cout<<"\n";
+            while(!c.empty())
+            {
+                node *t=c.front();
+                c.pop();
+                q.push(t);
+            }
         }
     }
     return ;

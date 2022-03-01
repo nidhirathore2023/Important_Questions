@@ -4,6 +4,8 @@
 using namespace std;
 vector<bool>visited;
 /*
+//     Get Component Code
+
   Topological Sort - > if one thing depend on other thing then how this things
   to be done so that independent things are done before (toplogical sort in reverse order)
 */

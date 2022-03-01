@@ -7,7 +7,7 @@ int main()
     cin>>n;
     vector<int>dp(n+1,0);
     dp[0]=1;
-    for(int i=1;i<=n;i++)//direction of problem ------>>>>>>
+    for(int i=1;i<=n;i++)//direction of problem ------>>>>>> can be solved in any direction 
     {
         if(i==1)
         {
